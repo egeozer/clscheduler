@@ -15,7 +15,7 @@ public class MainApp {
         final FilterRegistrationBean registrationBean = new FilterRegistrationBean();
         registrationBean.setFilter(new JwtFilter());
         //Adding the secure URL pattern after initiating the JWT filter
-        registrationBean.addUrlPatterns("/client/secure/*");
+        registrationBean.addUrlPatterns("/client/*");
 
         return registrationBean;
     }
